@@ -1,9 +1,15 @@
 
-var msnry = new Masonry('#photo-gallery', {
-    itemSelector: '.photo',
-    fitWidth: true,
-})
+let mnsry;
+function initMnsry() {
+    if (mnsry) {
+        mnsry.destroy();
+    }
+    mnsry = new Masonry('#photo-gallery', {
+        itemSelector: '.photo',
+        fitWidth: true,
+    })
 
+}
 const cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', (e) => {
     gsap.to(cursor, {
@@ -26,12 +32,17 @@ sections.forEach((section) => {
     })
 })
 
+initMnsry();
+
+window.addEventListener('resize', initMnsry)
 
 
-
-const loader = document.querySelector('.loader');
+const loader = document.querySelector('#loader');
 window.onload = () => {
     loader.style.display = 'none';
+    setTimeout(() => {
+        document.body.classList.remove('stop-scroll')
+    }, 8000);
 }
 
 

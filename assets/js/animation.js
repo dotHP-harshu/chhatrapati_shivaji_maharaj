@@ -144,8 +144,8 @@ photos.forEach((photo, index) => {
             duration: 4,
             scrollTrigger: {
                 trigger: photo,
-                start: 'top 80%',
-                end: 'top 20%',
+                start: 'top 90%',
+                end: 'top 50%',
                 scrub: true,
             }
         })
@@ -157,8 +157,8 @@ photos.forEach((photo, index) => {
             duration: 4,
             scrollTrigger: {
                 trigger: photo,
-                start: 'top 80%',
-                end: 'top 40%',
+                start: 'top 90%',
+                end: 'top 50%',
                 scrub: true,
             }
         })
@@ -192,3 +192,17 @@ gsap.to(".loader-text", {
     duration: 3,
     ease: "sine.inOut"
   });
+
+
+  // footer animation 
+
+    gsap.from('footer', {
+        opacity: 0,
+        y: 200,
+        duration: 1,
+        scrollTrigger: {
+            trigger: 'footer',
+            start: 'top 90%',
+            end: 'top 50%',
+        }
+    })

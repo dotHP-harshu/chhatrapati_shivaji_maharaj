@@ -24,15 +24,11 @@
 
 </head>
 
-<body class="cursor-none">
+<body class="cursor-none stop-scroll">
     <!-- -------------------- loader -------------- -->
-    <div
-        class="loader fixed h-[100vh] w-[100vw] top-0 left-0 flex flex-col justify-center items-center bg-[var(--saffron)] z-[9999]">
-        <p class="flag text-8xl">🚩</p>
-        <p class="loader-text text-3xl mt-7 text-[var(--brown)] font-[cinzel]">Loading Swarajya ...</p>
-    </div>
-
-
+     <div id="loader" class="h-[100vh] w-[100vw] fixed top-0 left-0 flex justify-center items-center bg-zinc-600 z-[999]">
+         <div class="loader"></div>
+     </div>
     <!-- -------------------- loader -------------- -->
     <!-- ------------ Cursors ------------------ -->
     <div class="cursor fixed text-3xl rounded-full bg-transparent pointer-events-none z-[999] max-mobile:hidden">❤️
@@ -41,7 +37,7 @@
     <!-- ------------------ Header starts here---------------------------------------------------------------- -->
     <header data-cursor="❤️" class="bg-black h-[100vh] flex justify-center overflow-hidden max-mobile:flex-col-reverse">
         <div id="left" class="w-1/2 h-full relative shrink-0 max-mobile:w-full max-mobile:h-1/2">
-            <img class="hero-img w-full h-auto absolute bottom-0 left-0 opacity-0 " src="assets/images/hero_1.png"
+            <img class="hero-img w-auto h-full absolute bottom-0 left-0 opacity-0 max-mobile:left-1/2 max-mobile:transform max-mobile:-translate-x-1/2" src="assets/images/hero_1.png"
                 alt="hero_1" />
         </div>
 
@@ -51,7 +47,8 @@
                 class="opacity-1 text-[var(--ivory)] text-6xl font-[merriweather] font-bold stroke-black stroke-1 max-mobile:text-2xl">
                 The lagacy of
             </p>
-            <p class="opacity-1 text-[var(--maroon)] text-8xl font-[cinzel] mt-2 hero-name max-mobile:text-4xl">
+            <p
+                class="opacity-1 text-[var(--maroon)] text-7xl leading-[7rem] font-[battle] mt-2  hero-name max-mobile:text-[2rem] max-mobile:leading-[4rem]">
                 Chhatrapati Shiva Ji Maharaj
             </p>
             <p class="opacity-1 text-[var(--gold)] text-6xl font-[playfair] mt-10 opacity-0 max-mobile:text-2xl">
@@ -61,9 +58,9 @@
     </header>
     <!-- ------------------ Header ends here---------------------------------------------------------------- -->
     <!-- ------------------ Intro para starts here---------------------------------------------------------------- -->
-    <div data-cursor="🏹" class="intro-para w-full min-h-[100vh] bg-[var(--brown)] flex justify-center items-center ">
+    <div data-cursor="🏹" class="intro-para w-full min-h-[100vh] bg-[#8c2f39] flex justify-center items-center ">
         <p
-            class="text-[var(--ivory)] text-4xl w-3/4 font-[scramento] max-mobile:w-full max-mobile:text-xl max-mobile:px-4">
+            class="text-[var(--ivory)] text-4xl w-3/4 font-[royalacid] max-mobile:w-full max-mobile:text-xl max-mobile:px-8">
             <span class="text-6xl font-[playfair] max-mobile:text-2xl">"</span>
             Chhatrapati Shiva Ji Maharaj, the founder of the
             <span class="highlighted-intro text-[var(--gold)] inline-block font-[cinzel]">Maratha Empire</span>, is a
@@ -80,32 +77,37 @@
     <!-- ------------------ Intro para ends here---------------------------------------------------------------- -->
     <!-- ------------------ Life journey starts here---------------------------------------------------------------- -->
     <div data-cursor="⚔️" id="life-journey-container" class="overflow-x-hidden">
-        <div id="life-journey" class="h-[100vh] bg-[#FFE066] flex items-center w-max gap-10 overflow-x-hidden px-16">
+        <div id="life-journey" class="h-[100vh]  flex items-center w-max gap-10 overflow-x-hidden px-16">
             <!-- -------------- Journey card ----------------------/ -->
-            <div class="flex items-center h-[60%] w-auto gap-10 max-mobile:h-[40%] max-mobile:flex-row-reverse">
-                <div class="h-full shrink-0">
-                    <img src="assets/images/birth-of-shivaji.jpg" alt="birth-of-Shiva Ji"
-                        class="h-full w-auto shadow-xl shadow-black">
+            <div class="flex items-center h-[60%] w-auto gap-10 max-mobile:h-[40%] ">
+                <div class="h-full shrink-0 relative" ">
+                    <img src=" assets/images/birth-of-shivaji.jpg" alt="birth-of-Shiva Ji"
+                    class="h-full w-auto shadow-xl shadow-black">
+                    <img src="assets/images/arrow.svg" alt="arrow"
+                        class="arrow absolute h-[100px] w-auto top-[20px] left-[100%] max-mobile:h-[50px] max-mobile:top-[30px]">
                 </div>
                 <div class="shrink-0">
-                    <p class="text-5xl font-[cinzel] text-[var(--brown)] max-mobile:text-2xl">1630</p>
-                    <p
-                        class="text-3xl font-[merriweather]  text-[var(--maroon)] mt-6 w-[600px] max-mobile:text-xl max-mobile:w-[300px]">
+                    <p class="text-5xl font-[cinzel] text-[var(--gold)] max-mobile:text-2xl">1630</p>
+                    <p1
+                        class="text-3xl font-[merriweather]  text-[var(--ivory)] mt-6 w-[600px] max-mobile:text-xl max-mobile:w-[300px]">
                         Born in Shivneri
                         Fort,
-                        Maharashtra.</p>
+                        Maharashtra.</p1>
                 </div>
             </div>
             <!-- -------------- Journey card ----------------------/ -->
             <!-- -------------- Journey card ----------------------/ -->
-            <div class="flex items-center h-[60%] w-auto gap-10 max-mobile:h-[40%] max-mobile:flex-row-reverse">
-                <div class="h-full shrink-0">
+            <div class="flex items-center h-[60%] w-auto gap-10 max-mobile:h-[40%]">
+                <div class="h-full shrink-0 relative">
                     <img src="assets/images/img_4.jpg" alt="img_4" class="h-full w-auto shadow-xl shadow-black">
+                    <img src="assets/images/arrow.svg" alt="arrow"
+                        class="arrow absolute h-[100px] w-auto top-[20px] left-[100%] max-mobile:h-[50px] ">
+
                 </div>
                 <div class="shrink-0">
-                    <p class="text-5xl font-[cinzel] text-[var(--brown)] max-mobile:text-2xl">1645</p>
+                    <p class="text-5xl font-[cinzel] text-[var(--gold)] max-mobile:text-2xl">1645</p>
                     <p
-                        class="text-3xl font-[merriweather] text-[var(--maroon)] mt-6 w-[600px] max-mobile:text-xl max-mobile:w-[300px]">
+                        class="text-3xl font-[merriweather] text-[var(--ivory)] mt-6 w-[600px] max-mobile:text-xl max-mobile:w-[300px]">
                         Gained control of
                         Torna
                         Fort at the age of 15.</p>
@@ -113,14 +115,16 @@
             </div>
             <!-- -------------- Journey card ----------------------/ -->
             <!-- -------------- Journey card ----------------------/ -->
-            <div class="flex items-center h-[60%] w-auto gap-10 max-mobile:h-[40%] max-mobile:flex-row-reverse">
-                <div class="h-full shrink-0">
+            <div class="flex items-center h-[60%] w-auto gap-10 max-mobile:h-[40%] ">
+                <div class="h-full shrink-0 relative">
                     <img src="assets/images/img_6.jpg" alt="img_6" class="h-full w-auto shadow-xl shadow-black">
+                    <img src="assets/images/arrow.svg" alt="arrow"
+                        class="arrow absolute h-[100px] w-auto top-[20px] left-[100%] max-mobile:h-[50px] ">
                 </div>
                 <div class="shrink-0">
-                    <p class="text-5xl font-[cinzel] text-[var(--brown)] max-mobile:text-2xl">1660</p>
+                    <p class="text-5xl font-[cinzel] text-[var(--gold)] max-mobile:text-2xl">1660</p>
                     <p
-                        class="text-3xl font-[merriweather] text-[var(--maroon)] mt-6 w-[600px] max-mobile:text-xl max-mobile:w-[300px]">
+                        class="text-3xl font-[merriweather] text-[var(--ivory)] mt-6 w-[600px] max-mobile:text-xl max-mobile:w-[300px]">
                         Led his first
                         successful
                         battle against Bijapur Sultanate.</p>
@@ -128,28 +132,32 @@
             </div>
             <!-- -------------- Journey card ----------------------/ -->
             <!-- -------------- Journey card ----------------------/ -->
-            <div class="flex items-center h-[60%] w-auto gap-10 max-mobile:h-[40%] max-mobile:flex-row-reverse">
-                <div class="h-full shrink-0">
+            <div class="flex items-center h-[60%] w-auto gap-10 max-mobile:h-[40%]">
+                <div class="h-full shrink-0 relative">
                     <img src="assets/images/img_15.jpg" alt="img_15" class="h-full w-auto shadow-xl shadow-black">
+                    <img src="assets/images/arrow.svg" alt="arrow"
+                        class="arrow absolute h-[100px] w-auto top-[20px] left-[100%] max-mobile:h-[50px] max-mobile:top-[0px] ">
                 </div>
                 <div class="shrink-0">
-                    <p class="text-5xl font-[cinzel] text-[var(--brown)] max-mobile:text-2xl">1674</p>
+                    <p class="text-5xl font-[cinzel] text-[var(--gold)] max-mobile:text-2xl">1674</p>
                     <p
-                        class="text-3xl font-[merriweather] text-[var(--maroon)] mt-6 w-[600px] max-mobile:text-xl max-mobile:w-[300px]">
+                        class="text-3xl font-[merriweather] text-[var(--ivory)] mt-6 w-[600px] max-mobile:text-xl max-mobile:w-[300px]">
                         Coronation as
                         Chhatrapati in Raigad Fort, marking the formal establishment of the Maratha Empire.</p>
                 </div>
             </div>
             <!-- -------------- Journey card ----------------------/ -->
             <!-- -------------- Journey card ----------------------/ -->
-            <div class="flex items-center h-[60%] w-auto gap-10 max-mobile:h-[40%] max-mobile:flex-row-reverse">
-                <div class="h-full shrink-0">
+            <div class="flex items-center h-[60%] w-auto gap-10 max-mobile:h-[40%] ">
+                <div class="h-full shrink-0 relative">
                     <img src="assets/images/map.jpg" alt="map" class="h-full w-auto shadow-xl shadow-black">
+                    <img src="assets/images/arrow.svg" alt="arrow"
+                        class="arrow absolute h-[100px] w-auto top-[20px] left-[100%] max-mobile:h-[50px] max-mobile:top-[0px] ">
                 </div>
                 <div class="shrink-0">
-                    <p class="text-5xl font-[cinzel] text-[var(--brown)] max-mobile:text-2xl">1680</p>
+                    <p class="text-5xl font-[cinzel] text-[var(--gold)] max-mobile:text-2xl">1680</p>
                     <p
-                        class="text-3xl font-[merriweather] text-[var(--maroon)] mt-6 w-[600px] max-mobile:text-xl max-mobile:w-[300px]">
+                        class="text-3xl font-[merriweather] text-[var(--ivory)] mt-6 w-[600px] max-mobile:text-xl max-mobile:w-[300px]">
                         Passed away on April
                         3,
                         1680, leaving behind a powerful empire and an immortal lagacy.</p>
@@ -169,7 +177,8 @@
                 class="achievement-cards bg-[var(--gold)] p-10  transition-all  w-96 border-4 border-[var(--gold)] max-mobile:p-6 max-mobile:w-full">
                 <h1 class="achivement-title text-xl  text-[var(--maroon)] font-[cinzel]">Strategic Military Leadership
                 </h1>
-                <p class="achievement-para mt-6 text-md ">Shiva Ji Maharaj’s military genius was demonstrated through his
+                <p class="achievement-para mt-6 text-md ">Shiva Ji Maharaj’s military genius was demonstrated through
+                    his
                     <b>guerrilla warfare tactics</b> . He built a formidable empire by using surprise, speed, and
                     agility, often using the geography
                     of Western India to his advantage.
@@ -199,7 +208,8 @@
             <div
                 class="achievement-cards bg-[var(--gold)] p-10  transition-all  w-96 border-4 border-[var(--gold)] max-mobile:p-6 max-mobile:w-full">
                 <h1 class="achivement-title text-xl  text-[var(--maroon)] font-[cinzel]">Progressive Governance</h1>
-                <p class="achievement-para mt-6 text-md ">Shiva Ji implemented a <b>progressive system of governance</b>,
+                <p class="achievement-para mt-6 text-md ">Shiva Ji implemented a <b>progressive system of
+                        governance</b>,
                     focused on welfare, justice, and equal treatment. He promoted <b>religious tolerance</b>, ensuring
                     that Hindus, Muslims, and other communities thrived under his rule.</p>
             </div>
@@ -230,7 +240,7 @@
     <!-- ------------------ Gallery stars here---------------------------------------------------------------- -->
     <div data-cursor="🗡️" class="w-full overflow-hidden py-16 bg-[#ffffa5] max-mobile:w-full">
         <div id="photo-gallery" class="m-auto w-full max-mobile:w-full">
-            <div class="photo p-8">
+            <div class="photo p-8 max-mobile:w-full">
                 <img src="assets/images/img_1.jpg" alt="photo" class="w-auto max-w-96 max-mobile:w-full">
                 <h1
                     class="quotes p-4 italic bg-white text-[var(--brown)] text-xl absolute top-[87%] z-[4] left-24 w-[90%] border-4 border-[var(--gold)] max-mobile:text-lg max-mobile:left-0">
@@ -240,47 +250,57 @@
             <div class="photo p-8">
                 <img src="assets/images/img_2.jpg" alt="photo" class="w-auto max-w-96 max-mobile:w-full">
             </div>
-            <div class="photo p-8">
+            <div class="photo p-8 max-mobile:w-full">
                 <img src="assets/images/img_3.jpg" alt="photo" class="w-auto max-w-96 max-mobile:w-full">
             </div>
-            <div class="photo p-8">
+            <div class="photo p-8 max-mobile:w-full">
                 <img src="assets/images/img_4.jpg" alt="photo" class="w-auto max-w-96 max-mobile:w-full">
             </div>
-            <div class="photo p-8">
+            <div class="photo p-8 max-mobile:w-full">
                 <img src="assets/images/img_5.jpg" alt="photo" class="w-auto max-w-96 ">
             </div>
-            <div class="photo p-8">
+            <div class="photo p-8 max-mobile:w-full">
                 <img src="assets/images/img_6.jpg" alt="photo" class="w-auto max-w-96 max-mobile:w-full">
                 <h1
                     class="quotes p-4 italic bg-white text-[var(--brown)] text-xl absolute top-[85%] z-[4] -left-2 w-[90%] border-4 border-[var(--gold)] max-mobile:text-lg max-mobile:left-0">
                     "The true king is one who is loved by his people, and whose people have a strong sense of duty and
                     loyalty."</h1>
             </div>
-            <div class="photo p-8">
+            <div class="photo p-8 max-mobile:w-full">
                 <img src="assets/images/img_7.jpg" alt="photo" class="w-auto max-w-96 max-mobile:w-full">
             </div>
-            <div class="photo p-8">
+            <div class="photo p-8 max-mobile:w-full">
                 <img src="assets/images/img_8.jpg" alt="photo" class="w-auto max-w-96 max-mobile:w-full">
                 <h1
                     class="quotes p-4 italic bg-white text-[var(--brown)] text-xl absolute top-[85%] z-[4] -left-36 w-[90%] border-4 border-[var(--gold)] max-mobile:left-0 max-mobile:text-lg">
                     "A warrior is not a man who conquers others, but one who conquers his own fears."</h1>
             </div>
-            <div class="photo p-8">
+            <div class="photo p-8 max-mobile:w-full">
                 <img src="assets/images/img_11.jpg" alt="photo" class="w-auto max-w-96 max-mobile:w-full">
             </div>
-            <div class="photo p-8">
+            <div class="photo p-8 max-mobile:w-full">
                 <img src="assets/images/img_9.jpg" alt="photo" class="w-auto max-w-96 max-mobile:w-full">
             </div>
-            <div class="photo p-8">
+            <div class="photo p-8 max-mobile:w-full">
                 <img src="assets/images/img_10.jpg" alt="photo" class="w-auto max-w-96 max-mobile:w-full">
             </div>
-            <div class="photo p-8">
+            <div class="photo p-8 max-mobile:w-full">
                 <img src="assets/images/img_12.jpg" alt="photo" class="w-auto max-w-96 max-mobile:w-full">
             </div>
         </div>
     </div>
-
     <!-- ------------------ Gallery ends here---------------------------------------------------------------- -->
+    <!-- ------------------ footer starts here---------------------------------------------------------------- -->
+    <footer class="h-auto w-full overflow-x-hidden flex flex-col justify-center items-center px-12 py-20 bg-[#353535]">
+        <div class="footer-para w-full max-mobile:w-full">
+            <p class="text-[var(--ivory)] text-center font-light text-4xl italic">
+                "Let us not forget the legacy of Shivaji Maharaj, for it is not only of the past but a living
+                inspiration that guides us even today."
+                <!-- Chhatrapati Shivaji Maharaj's legacy extends far beyond his time. His vision of a self-reliant Maratha Empire inspired generations of leaders and warriors in India. His life and teachings continue to inspire bravery, nationalism, and the idea of an independent India. Modern India honours him as a national hero, and his life remains a symbol of courage, integrity, and valour. -->
+            </p>
+        </div>
+    </footer>
+    <!-- ------------------ footer ends here---------------------------------------------------------------- -->
 
     <!-- ----------- Java Script ----------- -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
