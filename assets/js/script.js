@@ -42,7 +42,7 @@ window.onload = () => {
     loader.style.display = 'none';
     setTimeout(() => {
         document.body.classList.remove('stop-scroll')
-    }, 8000);
+    }, 7500);
 }
 
 
