@@ -42,7 +42,7 @@ window.onload = () => {
     loader.style.display = 'none';
     setTimeout(() => {
         document.querySelector('.pc-message').style.display = 'none';
-    }, 1000);
+    }, 2000);
     let animationScript = document.createElement('script');
     animationScript.src = 'assets/js/animation.js';
     document.body.append(animationScript);
