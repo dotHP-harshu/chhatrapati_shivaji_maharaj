@@ -47,10 +47,13 @@ headerTimeline
         duration: 1,
         stagger: 0.05,
         color: 'var(--ivory)',
+        repeat: -1,
+        yoyo:true,
     })
     .from(headerText[0], {
         opacity: 0,
         duration: 1,
+        delayf:1,
         y: 50,
         ease: "power2.out",
     })
