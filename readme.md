@@ -64,7 +64,7 @@ Hey there! 👋 I’m **Harsh Prajapati** ❤️, a passionate front-end develop
 
 ### 📬 **Let's Connect**
 - **GitHub**: [dothp-harshu](https://github.com/dothp-harshu)  
-- **Twitter/X**: [@btw_harsh_](https://instagram.com/btw_harsh_)  
+- **Instagram**: [@btw_harsh_](https://instagram.com/btw_harsh_)  
 - **Email**: harshprajapati3636gmail.com  
 
 ---
